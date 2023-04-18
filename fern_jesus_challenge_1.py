@@ -1,7 +1,6 @@
 import random
 
 random_number = random.randint(0, 100)
-random_number = 50
 
 min = 0
 max = 100
