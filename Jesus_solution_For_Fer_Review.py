@@ -16,7 +16,7 @@ random_number = random.randint(-29389518293123, 92301239132060)
 
 # uses the midpoint between low and high to exclude half of the remaining possible values in the range per iteration. calls itself until current_guess == random_number
 def s(low, high, random_number, iterations):
-    # googled this because I've never seen // before (kinda cheating, sorry), but basically equivalent to floor((l + h) / 2)
+    # googled this because I've never seen // before (kinda cheating, sorry), but basically dpes division and cuts off decimal part
     # calculates one of the integer midpoints and increments counter for # of iterations
     current_guess = (low + high) // 2
     iterations += 1
