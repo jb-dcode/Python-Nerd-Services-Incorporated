@@ -1,17 +1,16 @@
 import random
 import math
 
-min = -2392983243015912
-max = 1923922392349823
-
+min = -29389518293123
+max = 92301239132060
 random_number = random.randint(min, max)
 
-while min != max:
-    midpoint = (max + min) / 2
+iterations = int(math.log(1 / (max-min), 0.5)) + 1
+for i in range(iterations):
+    midpoint = (max + min) // 2
     if random_number < midpoint:
-        max = math.floor(midpoint)
+        max = midpoint
     else:
-        min = math.ceil(midpoint)
+        min = midpoint
 
-print("Guess: ", min)
-print("True: ", random_number)
+guess = min if min == random_number else max
