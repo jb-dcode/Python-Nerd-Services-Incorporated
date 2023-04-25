@@ -51,7 +51,7 @@ min = -29389518293123
 max = 92301239132060
 random_number = random.randint(min, max)
 
-iterations = int(math.log(1 / (max-min), 0.5)) + 1
+iterations = int.bit_length(max-min)
 for i in range(0, iterations):
     midpoint = (max + min) // 2
     if random_number < midpoint:
