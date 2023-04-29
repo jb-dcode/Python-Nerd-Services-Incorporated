@@ -1,11 +1,11 @@
 import random
 
-min = -999
-max = 999
+min = -29389518293123
+max = 92301239132060
 
 random_number = random.randint(min, max)
 
-current_guess = round((max + min) / 2)
+current_guess = (max + min) // 2
 
 while current_guess != random_number:
     if random_number < current_guess:
@@ -13,7 +13,7 @@ while current_guess != random_number:
     else:
         min = current_guess + 1
     
-    current_guess = round((max + min) / 2) 
+    current_guess = (max + min) // 2
 
 
 print("Guess: ", current_guess)
