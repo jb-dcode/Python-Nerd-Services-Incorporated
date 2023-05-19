@@ -9,4 +9,4 @@ def calculation(first_number, second_number):
     total_multi = first_number * second_number
     return total_sum, total_multi
 
-print(calculation(2,3))
+print("Totals:",calculation(2,3))
